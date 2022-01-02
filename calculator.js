@@ -48,7 +48,6 @@ function divide(x, y) {
     return a / b;
 }
 
-
 function operate(op, x, y) {
     if (op === "+") {
         return add(x, y);
@@ -65,7 +64,6 @@ function operate(op, x, y) {
     }
 }
 
-
 let displayValue = undefined;
 let x = "";
 let y = "";
@@ -74,22 +72,16 @@ let totes = 0;
 function GFG_click(clicked) {
     displayValue = document.getElementsByName('input')[0].value += clicked;
 
-
     if (isNaN(clicked)) {
         if (op === undefined) {
             op = clicked;
         } else {
-
             totes = operate(op.toString(), x, y)
-
             x = totes.toString();
             y = "";
             op = clicked;
         }
-
-
     } else {
-
         if (op === undefined) {
             x += clicked.toString();
         } else {
@@ -99,7 +91,6 @@ function GFG_click(clicked) {
     console.log("x is" + x);
     console.log("op is" + op);
     console.log("y is" + y);
-
 }
 
 
